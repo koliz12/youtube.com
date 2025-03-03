@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Open Graph мета-теги -->
-    <meta property="og:title" content="У селі Ксаверівка викрали 12-річного хлопчика">
-    <meta property="og:image" content="https://koliz12.github.io/youtube.com/image/image.jpg">
-    <meta property="og:url" content="https://koliz12.github.io/youtube.com/">
-    
-    <!-- Підключення CSS файлу -->
-    <link rel="stylesheet" href="style.css">
-    <title>@V1xPee</title>
+    <title>Scary Surprise</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: black;
+        }
+        video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let video = document.getElementById("screamer");
+            video.play();
+        });
+    </script>
 </head>
 <body>
-    <!-- Відео -->
-    <video id="screamer-video" src="video/video.mp4" autoplay muted></video>
-
-    <!-- Підключення JS файлу -->
-    <script src="script.js"></script>
+    <video id="screamer" src="video/video.mp4" autoplay playsinline></video>
 </body>
 </html>
